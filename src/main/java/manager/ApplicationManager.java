@@ -7,6 +7,7 @@ public class ApplicationManager {
 
     WebDriver wd;
     HelperUser user;
+    HelperCar car;
 
     public HelperUser getUser() {
         return user;
@@ -17,7 +18,12 @@ public class ApplicationManager {
         wd.manage().window().maximize();
         wd.navigate().to("https://ilcarro.web.app/search");
         user = new HelperUser(wd);
+        car = new HelperCar(wd);
 
+    }
+
+    public HelperCar getCar() {
+        return car;
     }
 
     public void tearDown() {
