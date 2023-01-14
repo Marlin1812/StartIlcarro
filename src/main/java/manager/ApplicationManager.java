@@ -5,6 +5,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class ApplicationManager {
 
+
+
     WebDriver wd;
     HelperUser user;
     HelperCar car;

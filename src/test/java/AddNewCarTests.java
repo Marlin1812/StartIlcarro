@@ -38,6 +38,8 @@ public class AddNewCarTests extends TestBase{
         . price("150")
 
                 .build();
+
+
         app.getCar().openCarForm();
         Assert.assertTrue(app.getCar().isCarFormPresent());
 //        app.getCar().fillCarForm();
